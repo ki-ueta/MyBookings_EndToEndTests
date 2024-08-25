@@ -18,7 +18,7 @@ namespace MyBooking_EndToEndTests.Base
             _configuration = configuration;
             _browser = browserFactory.CreateBrowserAsync().Result;
             _page = _browser.NewPageAsync().Result;
-            _page.GotoAsync(configuration["url"]);
+            _page.GotoAsync(configuration["baseurl"]);
         }
 
         [ClassInitialize]
